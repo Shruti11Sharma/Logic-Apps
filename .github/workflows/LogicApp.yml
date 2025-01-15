@@ -1,4 +1,4 @@
-name:Logic App CI/CD
+name: Logic App CI/CD
 
 on:
   push:
