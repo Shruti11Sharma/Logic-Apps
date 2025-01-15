@@ -6,7 +6,7 @@ on:
       - main  # Triggers on push to the main branch
 
 jobs:
-  hello-world:
+  Logic-App:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
