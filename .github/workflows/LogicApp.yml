@@ -1,4 +1,4 @@
-name: Logic App CI/CD
+name: Power BI CI/CD
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main  # Triggers on push to the main branch
 
 jobs:
-  logic-app:
+  power-bi:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
@@ -19,9 +19,9 @@ jobs:
         run: echo "Hello, World!"
 
       # Step 3: Wait for 3 minutes
-      - name: Wait for 3 minutes
-        run: sleep 180  # Sleep for 180 seconds (3 minutes)
+      - name: Wait for 2 minutes
+        run: sleep 120  # Sleep for 120 seconds (2 minutes)
 
       # Step 4: Print message after the wait
       - name: Print message after wait
-        run: echo "Pipeline waited for 3 minutes!"
+        run: echo "Pipeline waited for 2 minutes!"
