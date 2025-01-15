@@ -1,4 +1,4 @@
-name: Hello World CI/CD
+name:Logic App CI/CD
 
 on:
   push:
