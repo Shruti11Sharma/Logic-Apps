@@ -1,0 +1,19 @@
+name: Hello World CI/CD
+
+on:
+  push:
+    branches:
+      - main  # Triggers on push to the main branch
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+      # Step 1: Checkout the code (optional if no code is needed)
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Print "Hello, World!" in the job logs
+      - name: Print Hello, World!
+        run: echo "Hello, World!"
