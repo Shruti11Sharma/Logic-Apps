@@ -6,7 +6,7 @@ on:
       - main  # Triggers on push to the main branch
 
 jobs:
-  Logic-App:
+  logic-app:
     runs-on: ubuntu-latest  # Use the latest Ubuntu runner
 
     steps:
@@ -17,3 +17,11 @@ jobs:
       # Step 2: Print "Hello, World!" in the job logs
       - name: Print Hello, World!
         run: echo "Hello, World!"
+
+      # Step 3: Wait for 3 minutes
+      - name: Wait for 3 minutes
+        run: sleep 180  # Sleep for 180 seconds (3 minutes)
+
+      # Step 4: Print message after the wait
+      - name: Print message after wait
+        run: echo "Pipeline waited for 3 minutes!"
